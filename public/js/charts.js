@@ -1,7 +1,16 @@
 $(document).ready(function () {
     // alert('ready00');
     var url = $('#url').val();
-
+    $.ajax({
+        url:url,
+        type: "GET",
+        dataType:'json',
+        success:function (data) {
+            if(!data){
+                alert('please do the migrations first to seed required data');
+            }
+        }
+    });
     $.getJSON(url, function (csv) {
         console.log(csv);
         var chart = Highcharts.chart('container1', {

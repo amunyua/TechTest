@@ -7,6 +7,9 @@ use Carbon\Carbon;
 
 class ChartsController extends Controller
 {
+    /*To install please run php artisan migrate --seed to setup the required data
+    in the database
+    */
     public function sortData(){
        $first_date = UserData::min('created_at');
        $last_date = UserData::max('created_at');

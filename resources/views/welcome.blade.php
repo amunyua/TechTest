@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <input type="hidden" id="url" value="{{ url('home') }}">
                 <div class="panel panel-default">
-                    <div class="panel-heading">chart</div>
+                    <div class="panel-heading">On boarding process</div>
 
                     <div class="panel-body">
                         <div id="container1">
